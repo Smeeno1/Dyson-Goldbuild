@@ -1,8 +1,8 @@
 autoinstall:
   version: 1
   identity:
-    hostname: SET-HOSTNAME
-    username: SET-USERNAME
+    hostname: UKRDV11111-test
+    username: testuser
     password: "$6$ZE4WV3QRJhPUnsNv$BpkTBYjUOxOiWV5sNPYDSitTwxW.3NHLmhRqptzpa8a4KTxGpkvMaSDbyq4PVri9kdpD1t7ldUBgwB6uveObg."
   storage:
     layout:
