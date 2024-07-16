@@ -19,4 +19,5 @@ autoinstall:
     - usbguard
     - landscape-client
   late-commands:
-    - curtin in-target -- landscape-config --computer-title "UKRDV11111-test" --account-name standalone -p 2D2B4PVFBDV --url https://landscape.dyson.com/message-system --ping-url http:/landscape.dyson.com/ping
+    #- curtin in-target -- landscape-config --computer-title "UKRDV11111-test" --account-name standalone -p 2D2B4PVFBDV --url https://landscape.dyson.com/message-system --ping-url http:/landscape.dyson.com/ping
+    - curtin in-target -- apt remove -y thunderbird
