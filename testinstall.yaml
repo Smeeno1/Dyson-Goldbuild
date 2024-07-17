@@ -8,8 +8,8 @@ autoinstall:
     layout:
       name: lvm
       password: Dyson!master
-  keyboard:
-    layout: "gb"
+  #keyboard:
+    #layout: "gb"
   #locale: en_GB
   snaps:
     - name: sosreport
