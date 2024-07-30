@@ -2,15 +2,16 @@ autoinstall:
   version: 1
   identity:
     hostname: UKRDV11111-test
-    username: testuser
+    username: install
     password: "$6$ZE4WV3QRJhPUnsNv$BpkTBYjUOxOiWV5sNPYDSitTwxW.3NHLmhRqptzpa8a4KTxGpkvMaSDbyq4PVri9kdpD1t7ldUBgwB6uveObg."
+    #Password = ubuntu
   storage:
     layout:
       name: lvm
       password: Dyson!master
-  #keyboard:
-    #layout: "gb"
-  #locale: en_GB
+  keyboard:
+    layout: "gb"
+  locale: en_GB
   snaps:
     - name: sosreport
       classic: true
@@ -18,6 +19,7 @@ autoinstall:
     - vim
     - usbguard
     - landscape-client
+    - google-chrome-stable
   late-commands:
     - curtin in-target -- apt remove -y thunderbird
     #- curtin in-target -- landscape-config --silent --computer-title "UKRDV11111-test" --account-name standalone -p 2D2B4PVFBDV --url https://landscape.dyson.com/message-system --ping-url http://landscape.dyson.com/ping
