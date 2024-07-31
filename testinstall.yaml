@@ -19,6 +19,24 @@ autoinstall:
     - vim
     - usbguard
     - landscape-client
+    - libnss3-tools
+    - git
+    - openssh-server
+    - printer-driver-fujixerox
+    - cifs-utils
+    - curl
+    - expect
+    - keyutils
+    - libpwquality-tools
+    - net-tools
+    - ntpdate
+    - timeshift
+    - usbguard
+    - linux-oem-24.04
+    - nvidia-driver-535
+    - linux-modules-nvidia-535-generic-hwe-24.04
+    - linux-modules-nvidia-535-oem-24.04
   late-commands:
     - curtin in-target -- snap remove thunderbird
+    - curtin in-target -- apt purge bluez-obexd 
     #- curtin in-target -- landscape-config --silent --computer-title "UKRDV11111-test" --account-name standalone -p 2D2B4PVFBDV --url https://landscape.dyson.com/message-system --ping-url http://landscape.dyson.com/ping
