@@ -21,5 +21,5 @@ autoinstall:
     - landscape-client
     - google-chrome-stable
   late-commands:
-    - curtin in-target -- apt remove -y thunderbird
+    - curtin in-target -- snap remove thunderbird
     #- curtin in-target -- landscape-config --silent --computer-title "UKRDV11111-test" --account-name standalone -p 2D2B4PVFBDV --url https://landscape.dyson.com/message-system --ping-url http://landscape.dyson.com/ping
