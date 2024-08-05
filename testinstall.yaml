@@ -32,7 +32,7 @@ autoinstall:
     - ntpdate
     - timeshift
     - usbguard
-    - linux-oem-24.04
+    #- linux-oem-24.04
     - nvidia-driver-535
     #- linux-modules-nvidia-535-generic-hwe-24.04
     #- linux-modules-nvidia-535-oem-24.04
