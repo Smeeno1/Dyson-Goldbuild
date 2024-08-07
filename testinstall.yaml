@@ -1,5 +1,7 @@
 autoinstall:
   version: 1
+  #interactive-sections:
+    #- identity
   identity:
     hostname: UKRDV11111-test
     username: install
@@ -12,6 +14,7 @@ autoinstall:
   keyboard:
     layout: gb
   locale: en_GB.UTF-8
+  timezone: geoip
   snaps:
     - name: sosreport
       classic: true
