@@ -1,8 +1,8 @@
 autoinstall:
   version: 1
-  refresh-installer:
-   update: true
-   channel: latest/beta
+  #refresh-installer:
+   #update: true
+   #channel: latest/beta
   interactive-sections:
     - identity
   #identity:
