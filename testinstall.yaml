@@ -3,8 +3,8 @@ autoinstall:
   #refresh-installer:
    #update: true
    #channel: latest/beta
-  #interactive-sections:
-    #- identity
+  interactive-sections:
+    - identity
   #identity:
     #hostname: UKRDV11111-test
     #username: install
@@ -41,13 +41,13 @@ autoinstall:
     - nvidia-driver-535
     #- linux-modules-nvidia-535-generic-hwe-24.04
     #- linux-modules-nvidia-535-oem-24.04
-  user-data:
-     users:
-       - name: itadmin
-         gecos: 'ITAdmin User'
-         passwd: '$6$ZE4WV3QRJhPUnsNv$zmbadGTmE4BnoUT/d8AnQtDQymr/NGo6dI.kYjNYIsfs76vGpAC6FgIHa.hNixHoRIh.S8QlC/WP65qR53rDM0'
-         groups: sudo
-         shell: /bin/bash
+  #user-data:
+  #   users:
+  #     - name: itadmin
+  #       gecos: 'ITAdmin User'
+  #       passwd: '$6$ZE4WV3QRJhPUnsNv$zmbadGTmE4BnoUT/d8AnQtDQymr/NGo6dI.kYjNYIsfs76vGpAC6FgIHa.hNixHoRIh.S8QlC/WP65qR53rDM0'
+  #       groups: sudo
+  #       shell: /bin/bash
    
   late-commands:
     - curtin in-target -- snap remove thunderbird
