@@ -3,10 +3,10 @@ autoinstall:
   refresh-installer:
    update: true
    channel: latest/beta
-  #identity:
-    #hostname: UKRDV11111-test
-    #username: install
-    #password: "$6$ZE4WV3QRJhPUnsNv$BpkTBYjUOxOiWV5sNPYDSitTwxW.3NHLmhRqptzpa8a4KTxGpkvMaSDbyq4PVri9kdpD1t7ldUBgwB6uveObg."
+  identity:
+    hostname: UKRDV11111-test
+    username: install
+    password: "$6$ZE4WV3QRJhPUnsNv$BpkTBYjUOxOiWV5sNPYDSitTwxW.3NHLmhRqptzpa8a4KTxGpkvMaSDbyq4PVri9kdpD1t7ldUBgwB6uveObg."
     #Password = ubuntu
   storage:
     layout:
@@ -16,8 +16,8 @@ autoinstall:
     layout: gb
   locale: en_GB.UTF-8
   timezone: geoip
-  interactive-sections:
-    - identity
+  #interactive-sections:
+  #  - identity
   snaps:
     - name: sosreport
       classic: true
